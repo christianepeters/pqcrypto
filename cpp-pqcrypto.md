@@ -2,8 +2,8 @@
 
 Selected stuff I've done.
 
-Standards:
-* [Classic McEliece](https://classic.mceliece.org/) (co-author)
+NIST PQC Competition:
+* Co-author of [Classic McEliece](https://classic.mceliece.org/) (Finalist, not standardized)
 
 Academic:
 * [Ph.D. Thesis](https://christianepeters.files.wordpress.com/2012/10/20110510-diss.pdf)
