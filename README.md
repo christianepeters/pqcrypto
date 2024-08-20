@@ -6,12 +6,15 @@ Selected links and resources relevant to post-quantum cryptography adoption.
 * [pqc-forum](https://groups.google.com/a/list.nist.gov/g/pqc-forum) mailing list
 
 # Standardization
-* [NIST PQCrypto standardization](https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization)
-  * [Announcement of Finalists](https://www.nist.gov/news-events/news/2022/07/nist-announces-first-four-quantum-resistant-cryptographic-algorithms)
-  * Draft Standards:
-    * CRYSTALS-Kyber: [FIPS 203](https://csrc.nist.gov/pubs/fips/203/ipd)
-    * CRYSTALS-Dilithium: [FIPS 204](https://csrc.nist.gov/pubs/fips/204/ipd)
-    * SPHINCS+: [FIPS 205](https://csrc.nist.gov/pubs/fips/205/ipd)
+
+* [NIST Releases First 3 Finalized Post-Quantum Encryption Standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards) (August 2024)
+* [Call for Additional Digital Signature Schemes](https://csrc.nist.gov/projects/pqc-dig-sig/standardization) (July 2023)
+* [NIST PQC Competition](https://csrc.nist.gov/Projects/post-quantum-cryptography/post-quantum-cryptography-standardization) (2017-2024)
+
+* Draft Standards:
+    * [FIPS 203: ML-KEM](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.203.pdf) (CRYSTALS-Kyber)
+    * [FIPS 204: ML-DSA](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.204.pdf) (CRYSTALS-Dilithium)
+    * [FIPS 205: SLH-DSA](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.205.pdf) (SPHINCS+)
     * FALCON: FIPS TBD
 
 * [ETSI](https://www.etsi.org/technologies/quantum-safe-cryptography)
