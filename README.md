@@ -1,4 +1,4 @@
-# pqcrypto
+# Post-Quantum Cryptography (PQC, pqcrypto)
 
 Selected links and resources relevant to post-quantum cryptography adoption.
 
@@ -24,6 +24,9 @@ Selected links and resources relevant to post-quantum cryptography adoption.
 
 ## PQC at Google 
 
+[Post-Quantum Cryptography Hub](https://cloud.google.com/security/resources/post-quantum-cryptography): 
+Provides content for all levels of technical expertise, including CISOs, security engineers, crypto-savvy folks, and anyone interested in learning more about post-quantum security.
+
 Blogs:
 * [Post-Quantum Cryptography: Standards and Progress](https://security.googleblog.com/2024/08/post-quantum-cryptography-standards.html)
 * [Cloud CISO Perspectives: Why we need to get ready for PQC](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-why-we-need-to-get-ready-for-pqc)
@@ -43,6 +46,7 @@ Technical:
 * Stefan Koelbl: TNO Symposium on PQcrypto'23: [PQC5_Slides_Stefan.Kolbl.pdf](https://www.post-quantum.nl/slides/PQC5_Slides_Stefan.Kolbl.pdf)
 
 Chrome:
+* [A new path for Kyber on the web](https://security.googleblog.com/2024/09/a-new-path-for-kyber-on-web.html)
 * [Advancing Our Amazing Bet on Asymmetric Cryptography](https://blog.chromium.org/2024/05/advancing-our-amazing-bet-on-asymmetric.html)
 * [Protecting Chrome Traffic with Hybrid Kyber KEM](https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html)
 
