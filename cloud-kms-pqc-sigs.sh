@@ -1,3 +1,8 @@
+# PQC Signatures in Google Cloud KMS
+# https://cloud.google.com/blog/products/identity-security/announcing-quantum-safe-digital-signatures-in-cloud-kms
+# https://cloud.google.com/kms/docs/algorithms#pqc_signing_algorithms
+# https://cloud.google.com/kms/docs/create-validate-signatures#create_signature
+#
 #!/bin/bash
 
 # Configuration
