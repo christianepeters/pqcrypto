@@ -28,46 +28,53 @@ Selected links and resources relevant to post-quantum cryptography adoption.
 
 ## PQC at Google 
 
-* PQC Hub / Resources: https://cloud.google.com/security/resources/post-quantum-cryptography
-* Google Status with respect to PQC Adoption: https://security.googleblog.com/2024/08/post-quantum-cryptography-standards.html
-* Google Infrastructure / Google Cloud: Security by Design: https://cloud.google.com/blog/products/identity-security/why-google-now-uses-post-quantum-cryptography-for-internal-comms
-* Cloud KMS Strategy: https://cloud.google.com/blog/products/identity-security/announcing-quantum-safe-digital-signatures-in-cloud-kms
-* Key Rotation in Cloud KMS: https://cloud.google.com/kms/docs/autokey-overview
-* C-level advice: (https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-why-we-need-to-get-ready-for-pqc) ([v2025](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-prepare-early-for-PQC-resilient-cryptographic-threats?e=48754805))
+[Post-Quantum Cryptography Hub](https://cloud.google.com/security/resources/post-quantum-cryptography): 
+Provides content for all levels of technical expertise, including CISOs, security engineers, crypto-savvy folks, and anyone interested in learning more about post-quantum security.
 
+Blogs:
+* [Post-Quantum Cryptography: Standards and Progress](https://security.googleblog.com/2024/08/post-quantum-cryptography-standards.html)
+* [Cloud CISO Perspectives: Why we need to get ready for Quantum](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-why-we-need-to-get-ready-for-pqc) ([v2025](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-prepare-early-for-PQC-resilient-cryptographic-threats?e=48754805))
+* [How Google is preparing for a post-quantum world](https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world)
+* [Why Google now uses post-quantum cryptography for internal comms](https://cloud.google.com/blog/products/identity-security/why-google-now-uses-post-quantum-cryptography-for-internal-comms)
+* Cloud KMS Strategy: https://cloud.google.com/blog/products/identity-security/announcing-quantum-safe-digital-signatures-in-cloud-kms
+   * Key Rotation in Cloud KMS: https://cloud.google.com/kms/docs/autokey-overview
+* [Transitioning organizations to post-quantum cryptography | Nature](https://www.nature.com/articles/s41586-022-04623-2)
+* [Podcast: EP164 Quantum Computing: Understanding the (very serious) Threat and Post-Quantum Cryptography](https://cloud.withgoogle.com/cloudsecurity/podcast/ep164-quantum-computing-understanding-the-very-serious-threat-and-post-quantum-cryptography/)
 
 
 ## Guidance
-* Threat Model: https://bughunters.google.com/blog/5108747984306176/google-s-threat-model-for-post-quantum-cryptography
-* Crypto Agility and Key Rotation : https://bughunters.google.com/blog/6182336647790592/cryptographic-agility-and-key-rotation
+* [Google's Threat model for Post-Quantum Cryptography](https://bughunters.google.com/blog/5108747984306176/google-s-threat-model-for-post-quantum-cryptography)
+* [Cryptographic Agility and Key Rotation](https://bughunters.google.com/blog/6182336647790592/cryptographic-agility-and-key-rotation)
 
 (For crypto engineers:)
-* Hybrid Deployment Strategy: https://bughunters.google.com/blog/5266882047639552/why-hybrid-deployments-are-key-to-secure-pqc-migration
-* Formal Verification Testing of correctness: https://bughunters.google.com/blog/6038863069184000/formally-verified-post-quantum-algorithms
+* [Why Hybrid Deployments Are Key to Secure PQC Migration](https://bughunters.google.com/blog/5266882047639552/why-hybrid-deployments-are-key-to-secure-pqc-migration)
+* [Formally Verified Post-Quantum Algorithms](https://bughunters.google.com/blog/6038863069184000/formally-verified-post-quantum-algorithms)
 
 
 ## How we enable developers using our crypto libraries
 * Low-level: BoringSSL : https://boringssl.googlesource.com/boringssl/
-* Incl NIST PQC standards, eg. https://boringssl.googlesource.com/boringssl/+/refs/heads/master/include/openssl/mlkem.h
-* BoringSSL is a fork of OpenSSL maintained by Google: https://en.wikipedia.org/wiki/OpenSSL#BoringSSL
+   * BoringSSL is a fork of OpenSSL maintained by Google: https://en.wikipedia.org/wiki/OpenSSL#BoringSSL
+   * BoringSSL includes NIST PQC standards implementation, eg. https://boringssl.googlesource.com/boringssl/+/refs/heads/master/include/openssl/mlkem.h
+   
 
-* Developer-friendly library: Tink - https://developers.google.com/tink/getting-started
-     * https://github.com/tink-crypto/tink-cc/tree/main/tink/experimental/pqcrypto
-     * https://developers.google.com/tink/roadmap
-     * Rationale behind Tink / Usability:
-          * https://opensource.googleblog.com/2018/08/introducing-tink-cryptographic-library.html
-          * https://chromium.googlesource.com/external/github.com/google/tink/+/refs/tags/upstream/v1.2.1/docs/SECURITY-USABILITY.md
+* Developer-friendly library: [Tink](https://developers.google.com/tink/getting-started)
+   * [Tink Intro / Design Rationale](https://opensource.googleblog.com/2018/08/introducing-tink-cryptographic-library.html)
+   * [Usability Considerations](https://chromium.googlesource.com/external/github.com/google/tink/+/refs/tags/upstream/v1.2.1/docs/SECURITY-USABILITY.md) - particularly abstracting away from algorithms to primitives
+   * [PQC Experimental in Tink](https://github.com/tink-crypto/tink-cc/tree/main/tink/experimental/pqcrypto)
+   * [Tink Roadmap](https://developers.google.com/tink/roadmap)
 
 
 # Chrome: from early experiments to ML-KEM rollout in 2024
-* https://www.imperialviolet.org/2016/11/28/cecpq1.html
-* https://en.wikipedia.org/wiki/CECPQ1
-* https://www.imperialviolet.org/2019/10/30/pqsivssl.html
-* https://en.wikipedia.org/wiki/CECPQ2
-* Google + Cloudflare : https://blog.cloudflare.com/the-tls-post-quantum-experiment/
-* https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html
-* https://blog.chromium.org/2024/05/advancing-our-amazing-bet-on-asymmetric.html
-https://security.googleblog.com/2024/09/a-new-path-for-kyber-on-web.html
+* 2016 CECPQ1 Experiment:
+   * https://www.imperialviolet.org/2016/11/28/cecpq1.html
+   * https://en.wikipedia.org/wiki/CECPQ1
+* 2019 CECPQ2 Experiment:
+   * https://www.imperialviolet.org/2019/10/30/pqsivssl.html
+   * https://en.wikipedia.org/wiki/CECPQ2
+   * https://blog.cloudflare.com/the-tls-post-quantum-experiment/
+* [Protecting Chrome Traffic with Hybrid Kyber KEM](https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html)
+* [Advancing Our Amazing Bet on Asymmetric Cryptography](https://blog.chromium.org/2024/05/advancing-our-amazing-bet-on-asymmetric.html)
+* [A new path for Kyber on the web](https://security.googleblog.com/2024/09/a-new-path-for-kyber-on-web.html)
 
 
 Other products using PQC
@@ -81,43 +88,7 @@ Selected Public Presentations at Real World Crypto
 * RWC’19: [Tink: A cryptographic library](https://www.youtube.com/watch?v=pqev9r3rUJs&t=9665s)
 * RWC’21: [What’s in a key?](https://youtu.be/CiH6iqjWpt8?t=1028)
 * RWC’23: [Crypto Agility and Post-Quantum Cryptography](https://youtu.be/IAOWRO9Qn10?t=107)
-* TNO Symposium on PQcrypto’23: PQC5_Slides_Stefan.Kolbl.pdf
-* Post-Quantum Cryptography at Google Sophie Schmieg IETF 117 July 25th, 2023
-* PQCrypto 2023: Invited Talk: PQC at Google (Sophie Schmieg)
-
-
-
-==== clean up ====
-[Post-Quantum Cryptography Hub](https://cloud.google.com/security/resources/post-quantum-cryptography): 
-Provides content for all levels of technical expertise, including CISOs, security engineers, crypto-savvy folks, and anyone interested in learning more about post-quantum security.
-
-Blogs:
-* [Announcing Quantum-Safe Signatures](https://cloud.google.com/blog/products/identity-security/announcing-quantum-safe-digital-signatures-in-cloud-kms)
-* [Post-Quantum Cryptography: Standards and Progress](https://security.googleblog.com/2024/08/post-quantum-cryptography-standards.html)
-* [Cloud CISO Perspectives: Why we need to get ready for Quantum](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-why-we-need-to-get-ready-for-pqc) ([v2025](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-prepare-early-for-PQC-resilient-cryptographic-threats?e=48754805))
-* [How Google is preparing for a post-quantum world](https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world)
-* [Why Google now uses post-quantum cryptography for internal comms](https://cloud.google.com/blog/products/identity-security/why-google-now-uses-post-quantum-cryptography-for-internal-comms)
-* [Transitioning organizations to post-quantum cryptography | Nature](https://www.nature.com/articles/s41586-022-04623-2)
-* [Podcast: EP164 Quantum Computing: Understanding the (very serious) Threat and Post-Quantum Cryptography](https://cloud.withgoogle.com/cloudsecurity/podcast/ep164-quantum-computing-understanding-the-very-serious-threat-and-post-quantum-cryptography/)
-
-
-Technical:
-* [Google's Threat model for Post-Quantum Cryptography](https://bughunters.google.com/blog/5108747984306176/google-s-threat-model-for-post-quantum-cryptography)
-* [Cryptographic Agility and Key Rotation](https://bughunters.google.com/blog/6182336647790592/cryptographic-agility-and-key-rotation)
-* [Why Hybrid Deployments Are Key to Secure PQC Migration](https://bughunters.google.com/blog/5266882047639552/why-hybrid-deployments-are-key-to-secure-pqc-migration)
-* [Formally Verified Post-Quantum Algorithms](https://bughunters.google.com/blog/6038863069184000/formally-verified-post-quantum-algorithms)
-* [Tink library: experimental | pqcrypto](https://github.com/tink-crypto/tink/tree/master/cc/experimental/pqcrypto)
-* Sophie Schmieg, Stefan Koelbl: [RWC’23: Crypto Agility and Post-Quantum Cryptography](https://youtu.be/IAOWRO9Qn10?t=107)
 * Stefan Koelbl: TNO Symposium on PQcrypto'23: [PQC5_Slides_Stefan.Kolbl.pdf](https://www.post-quantum.nl/slides/PQC5_Slides_Stefan.Kolbl.pdf)
-
-Chrome:
-* [A new path for Kyber on the web](https://security.googleblog.com/2024/09/a-new-path-for-kyber-on-web.html)
-* [Advancing Our Amazing Bet on Asymmetric Cryptography](https://blog.chromium.org/2024/05/advancing-our-amazing-bet-on-asymmetric.html)
-* [Protecting Chrome Traffic with Hybrid Kyber KEM](https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html)
-
-FIDO:
-* [Toward Quantum Resilient Security Keys](https://security.googleblog.com/2023/08/toward-quantum-resilient-security-keys.html)
-
 
 
 ## Other
