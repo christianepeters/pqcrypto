@@ -127,7 +127,7 @@ Focus on Risk Management
 * [IBM Quantum Computing](https://www.ibm.com/quantum)
 * [Azure Majorana](https://azure.microsoft.com/en-us/blog/quantum/2025/02/19/microsoft-unveils-majorana-1-the-worlds-first-quantum-processor-powered-by-topological-qubits/)
 * [Amazon Ocelot](https://www.aboutamazon.com/news/aws/quantum-computing-aws-ocelot-chip)
-* [China Quantum Computing Overview](https://bsiegelwax.substack.com/p/chinas-quantum-computers)
+* [China Quantum Computing Overview](https://bsiegelwax.substack.com/p/chinas-mightiest-quantum-computers)
 
 
 
