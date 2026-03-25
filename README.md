@@ -130,7 +130,9 @@ Focus on Risk Management
 
 * [Global Risk Institute: 2024 Quantum Threat Timeline Report](https://globalriskinstitute.org/publication/2024-quantum-threat-timeline-report/)
 * [Google Quantum AI](https://quantumai.google/quantumcomputer)
+   * [Building superconducting and neutral atom quantum computers](https://blog.google/innovation-and-ai/technology/research/neutral-atom-quantum-computers/)
    * [Google Willow](https://blog.google/technology/research/google-willow-quantum-chip/)
+   * [Google Quantum Echoes](https://blog.google/innovation-and-ai/technology/research/quantum-echoes-willow-verifiable-quantum-advantage/)
 * [IBM Quantum Computing](https://www.ibm.com/quantum)
 * [Azure Majorana](https://azure.microsoft.com/en-us/blog/quantum/2025/02/19/microsoft-unveils-majorana-1-the-worlds-first-quantum-processor-powered-by-topological-qubits/)
 * [Amazon Ocelot](https://www.aboutamazon.com/news/aws/quantum-computing-aws-ocelot-chip)
