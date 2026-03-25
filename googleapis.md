@@ -1,6 +1,6 @@
 # Testing Google APIs for PQC
 
-All Google and Google Cloud APIs (including google.com and *.googleapis.com) are accessible via TLS 1.3 with hybrid key exchange based on ML-KEM and curve25519.
+Google and Google Cloud APIs (including google.com and *.googleapis.com) are accessible via TLS 1.3 with hybrid key exchange based on ML-KEM and curve25519.
 
 ## How to test?
 You need a client capable of initiating a TLS 1.3 handshake using the `X25519MLKEM768` parameter.
