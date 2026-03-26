@@ -104,4 +104,4 @@ for api in $SERVICES; do
 done
 ```
 
-Using this [apipqctest.sh](./apipqctest.sh) script I successfully validated 500+ Google APIs, confirming use of an ML-KEM hybrid handshake: [apipqctest.out](./apipqctest.out) using the above script against projects in my Google Cloud environment.
+Using this [apipqctest.sh](./googleapis/apipqctest.sh) script I successfully validated 500+ Google APIs, confirming use of an ML-KEM hybrid handshake: [apipqctest.out](./googleapis/apipqctest.out) using the above script against projects in my Google Cloud environment.
