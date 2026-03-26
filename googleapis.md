@@ -8,7 +8,7 @@ You need a client capable of initiating a TLS 1.3 handshake using the `X25519MLK
 
 ### 1. Using Chrome
 
-This is the easiest way. Type in [https://www.google.com](https://www.google.com) into the Chrome address bar and then use Developer Tools to look at the details in the Security tab.
+This is the easiest way. Type [https://www.google.com](https://www.google.com) into the Chrome address bar and then use Developer Tools to look at the details in the Security tab.
 
 Note that if you test an API, e.g., if you paste [https://cloudkms.googleapis.com](https://cloudkms.googleapis.com) into the addess bar, you will likely see *"404. That’s an error."* However, the Develper Tools Security tab will confirm the handshake:
 *"The connection to this site is encrypted and authenticated using QUIC, X25519MLKEM768, and AES_128_GCM."*
@@ -104,4 +104,4 @@ for api in $SERVICES; do
 done
 ```
 
-Using this [apipqctest.sh](./apipqctest.sh) script I successfully validated 500+ Google APIs to use an MLKEM hybrid handshake: [apipqctest.out](./apipqctest.out) using above script with some arbitrary project in my Google Cloud environment.
+Using this [apipqctest.sh](./apipqctest.sh) script I successfully validated 500+ Google APIs, confirming use of an ML-KEM hybrid handshake: [apipqctest.out](./apipqctest.out) using the above script against projects in my Google Cloud environment.
