@@ -47,6 +47,31 @@ Connected.
   Cert issuer: C = US, O = Google Trust Services, CN = WE2
 ```
 
+Test for usage of ML-KEM-1024:
+```
+./bssl client -connect www.google.com -server-name www.google.com -curves MLKEM1024
+```
+Output:
+```
+Connecting to XXX
+Connected.
+  Version: TLSv1.3
+  Resumed session: no
+  Cipher: TLS_AES_128_GCM_SHA256
+  ECDHE group: MLKEM1024
+  Signature algorithm: ecdsa_secp256r1_sha256
+  Secure renegotiation: yes
+  Extended master secret: yes
+  Next protocol negotiated: 
+  ALPN protocol: 
+  OCSP staple: no
+  SCT list: no
+  Early data: no
+  Encrypted ClientHello: no
+  Cert subject: CN = www.google.com
+  Cert issuer: C = US, O = Google Trust Services, CN = WR2
+```
+
 ### 3. Using OpenSSL
 
 Test success depends on your version of openssl.
