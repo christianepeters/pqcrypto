@@ -16,6 +16,9 @@ Note that if you test an API, e.g., if you paste [https://cloudkms.googleapis.co
 
 
 ### 2. Using BoringSSL
+
+Install BoringSSL: [see below](./googleapis.md#installing-boringssl).
+
 Using `bssl client` from BoringSSL, hybrid ML-KEM handshakes can be established with various APIs.
 
 Example:
@@ -105,3 +108,30 @@ done
 ```
 
 Using this [apipqctest.sh](./googleapis/apipqctest.sh) script I successfully validated 500+ Google APIs, confirming use of an ML-KEM hybrid handshake: [apipqctest.out](./googleapis/apipqctest.out) using the above script against projects in my Google Cloud environment.
+
+
+
+
+## Appendix
+
+### Installing BoringSSL
+
+Prerequisites
+```
+sudo apt update
+sudo apt install cmake build-essential golang ninja-build git
+```
+
+Clone the BoringSSL Repository:
+```
+git clone https://boringssl.googlesource.com/boringssl
+cd boringssl
+```
+
+Build BoringSSL:
+```
+mkdir build
+cd build
+cmake -GNinja -B build -DCMAKE_BUILD_TYPE=Release ..
+ninja -C build
+```
