@@ -72,6 +72,23 @@ Connected.
   Cert issuer: C = US, O = Google Trust Services, CN = WR2
 ```
 
+Testing with fallback to ECC-based handshakes:
+```
+./bssl client -connect www.cloudflare.com:443 -server-name www.cloudflare.com -curves X25519MLKEM768:X25519
+./bssl client -connect www.ibm.com:443 -server-name www.ibm.com -curves X25519MLKEM768:X25519
+./bssl client -connect www.microsoft.com:443 -server-name www.microsoft.com -curves X25519MLKEM768:X25519
+```
+(MS still uses ECDHE group: X25519 as of 22-May-2026)
+
+Testing selected APIs:
+```
+./bssl client -connect storage.googleapis.com:443 -server-name storage.googleapis.com -curves X25519MLKEM768:X25519
+./bssl client -connect cloudkms.googleapis.com:443 -server-name cloudkms.googleapis.com -curves X25519MLKEM768:X25519
+./bssl client -connect youtube.googleapis.com:443 -server-name youtube.googleapis.com -curves X25519MLKEM768:X25519
+./bssl client -connect oauth2.googleapis.com:443 -server-name oauth2.googleapis.com -curves X25519MLKEM768:X25519
+```
+
+
 ### 3. Using OpenSSL
 
 Test success depends on your version of openssl.
@@ -96,7 +113,6 @@ Protocol: TLSv1.3
 Server public key is 256 bit
 This TLS version forbids renegotiation.
 ```
-
 
 
 ## Scaling the Test
@@ -159,4 +175,9 @@ mkdir build
 cd build
 cmake -GNinja -B build -DCMAKE_BUILD_TYPE=Release ..
 ninja -C build
+```
+
+If you're on a machine with memory constraints replace the last step by:
+```
+ninja -C build -j 4
 ```
