@@ -35,12 +35,15 @@ Provides content for all levels of technical expertise, including CISOs, securit
 
 ### Blogs:
 * [The quantum era is coming. Are we ready to secure it?](https://blog.google/innovation-and-ai/technology/safety-security/the-quantum-era-is-coming-are-we-ready-to-secure-it/)
+* [Google's timeline for PQC Adoption](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/)
 * [Post-Quantum Cryptography: Standards and Progress](https://security.googleblog.com/2024/08/post-quantum-cryptography-standards.html)
-* [PQC at Google Cloud](https://cloud.google.com/blog/products/identity-security/how-were-helping-customers-prepare-for-a-quantum-safe-future?e=48754805)
+* [Update PQC at Google Cloud](https://cloud.google.com/blog/products/identity-security/how-were-helping-customers-prepare-for-a-quantum-safe-future?e=48754805)
+* [Why Google now uses post-quantum cryptography for internal comms](https://cloud.google.com/blog/products/identity-security/why-google-now-uses-post-quantum-cryptography-for-internal-comms)
+* [Announcing Quantum-Safe Digital Signatures in Cloud KMS](https://cloud.google.com/blog/products/identity-security/announcing-quantum-safe-digital-signatures-in-cloud-kms)
+* [Announcing quantum-safe Key Encapsulation Mechanisms in Cloud KMS](https://cloud.google.com/blog/products/identity-security/announcing-quantum-safe-key-encapsulation-mechanisms-in-cloud-kms)
+* [Announcing quantum-safe key exchange for Application & Network Proxy Load Balancers](https://discuss.google.dev/t/announcing-quantum-safe-key-exchange-for-application-network-proxy-load-balancers/)
 * [Cloud CISO Perspectives: Why we need to get ready for Quantum](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-why-we-need-to-get-ready-for-pqc) ([v2025](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-prepare-early-for-PQC-resilient-cryptographic-threats?e=48754805))
 * [How Google is preparing for a post-quantum world](https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world)
-* [Why Google now uses post-quantum cryptography for internal comms](https://cloud.google.com/blog/products/identity-security/why-google-now-uses-post-quantum-cryptography-for-internal-comms)
-* [Announcing Quantum-Safe Digital Signatures in Cloud KMS](https://cloud.google.com/blog/products/identity-security/announcing-quantum-safe-digital-signatures-in-cloud-kms) (Cloud KMS Strategy)
 * [Transitioning organizations to post-quantum cryptography | Nature](https://www.nature.com/articles/s41586-022-04623-2)
 * [Podcast: EP164 Quantum Computing: Understanding the (very serious) Threat and Post-Quantum Cryptography](https://cloud.withgoogle.com/cloudsecurity/podcast/ep164-quantum-computing-understanding-the-very-serious-threat-and-post-quantum-cryptography/)
 * [Navigating quantum news](https://security.googlecloudcommunity.com/ciso-blog-77/how-cisos-can-navigate-the-quantum-shift-6133)
@@ -50,6 +53,7 @@ Provides content for all levels of technical expertise, including CISOs, securit
 * [Google's Threat model for Post-Quantum Cryptography](https://bughunters.google.com/blog/5108747984306176/google-s-threat-model-for-post-quantum-cryptography)
 * [Cryptographic Agility and Key Rotation](https://bughunters.google.com/blog/6182336647790592/cryptographic-agility-and-key-rotation)
 * [Why PQC is Google's Path forward and not QKD](https://bughunters.google.com/blog/googles-commitment-to-a-quantum-safe-future-why-pqc-is-googles-path-forward-and-not-qkd)
+* [Where to go next with quantum-safe certificates](https://bughunters.google.com/blog/next-with-quantum-safe-certificates)
 
 For crypto engineers:
 * [Why Hybrid Deployments Are Key to Secure PQC Migration](https://bughunters.google.com/blog/5266882047639552/why-hybrid-deployments-are-key-to-secure-pqc-migration)
