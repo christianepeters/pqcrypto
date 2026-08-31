@@ -19,14 +19,13 @@ Selected links and resources relevant to post-quantum cryptography adoption.
     * FALCON: FIPS TBD
     * HQC: FIPS TBD
 
-* [IETF PQC Working Group](https://wiki.ietf.org/group/sec/PQCAgility)
 * [IETF TLS Working Group](https://datatracker.ietf.org/wg/tls/about/)
 * [IETF PLANTS](https://datatracker.ietf.org/wg/plants/about/): PKI, Logs, And Tree Signatures (plants)
+* [IETF PQC Working Group](https://wiki.ietf.org/group/sec/PQCAgility)
 
 * [ISO/IEC 18033-2](https://www.iso.org/obp/ui/en/#iso:std:iso-iec:18033:-2:ed-1:v1:amd:2:v1:en) - full access requires payment
     * Classic McEliece ISO parameters: https://classic.mceliece.org/iso.html
     * FrodoKEM: https://frodokem.org/
-* [ETSI](https://www.etsi.org/technologies/quantum-safe-cryptography)
 
 
 # Industry
