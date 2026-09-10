@@ -1,6 +1,6 @@
 # Signing with ML-DSA in Google Cloud KMS
 
-This guide shows how to generate and verify post-quantum digital signatures (ML-DSA / FIPS 204) using Google Cloud KMS, and why you must choose the right key algorithm based on payload size.
+This guide shows how to generate and verify post-quantum digital signatures (ML-DSA / FIPS 204) using Google Cloud KMS, and why it is important to choose the right key algorithm based on payload size.
 
 
 ## Local Workstation pre-requisites (also in Cloud Console)
