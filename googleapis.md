@@ -17,7 +17,7 @@ Note that if you test an API, e.g., if you paste [https://cloudkms.googleapis.co
 
 ### 2. Using BoringSSL
 
-Install BoringSSL: [see below](./googleapis.md#installing-boringssl).
+Install BoringSSL: [see this file](https://github.com/christianepeters/howto/blob/master/boringssl.md).
 
 Using `bssl client` from BoringSSL, hybrid ML-KEM handshakes can be established with various APIs.
 
@@ -153,31 +153,4 @@ Using this [apipqctest.sh](./googleapis/apipqctest.sh) script I successfully val
 
 
 
-## Appendix
 
-### Installing BoringSSL
-
-Prerequisites
-```
-sudo apt update
-sudo apt install cmake build-essential golang ninja-build git
-```
-
-Clone the BoringSSL Repository:
-```
-git clone https://boringssl.googlesource.com/boringssl
-cd boringssl
-```
-
-Build BoringSSL:
-```
-mkdir build
-cd build
-cmake -GNinja -B build -DCMAKE_BUILD_TYPE=Release ..
-ninja -C build
-```
-
-If you're on a machine with memory constraints replace the last step by:
-```
-ninja -C build -j 4
-```
