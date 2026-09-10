@@ -136,3 +136,8 @@ openssl pkeyutl -verify \
     -sigfile large_signature.sig
 ```
 
+
+
+## Notes
+
+When PQC signature support launched in Cloud KMS in 2025, I created this script [cloud-kms-pqc-sigs.sh](https://github.com/christianepeters/pqcrypto/blob/main/cloud-kms-pqc-sigs.sh) to test creation of PQC signature keys. Back then there was no `gcloud` or `GUI` support for PQC algorithms. So that file still uses plain API calls.
