@@ -140,4 +140,12 @@ openssl pkeyutl -verify \
 
 ## Notes
 
-When PQC signature support launched in Cloud KMS in 2025, I created this script [cloud-kms-pqc-sigs.sh](https://github.com/christianepeters/pqcrypto/blob/main/cloud-kms-pqc-sigs.sh) to test creation of PQC signature keys. Back then there was no `gcloud` or `GUI` support for PQC algorithms. So that file still uses plain API calls.
+### References
+* Cloud KMS documentation: https://docs.cloud.google.com/kms/docs/algorithms#pqc_signing_algorithms
+* [Blog: Quantum-safe digital signatures in Cloud KMS](https://cloud.google.com/blog/products/identity-security/future-proofing-data-integrity-quantum-safe-digital-signatures-in-cloud-kms?e=48754805)
+
+
+### Initial experiments
+When PQC signature support launched in Cloud KMS in 2025, I created this script [cloud-kms-pqc-sigs.sh](https://github.com/christianepeters/pqcrypto/blob/main/cloud-kms-pqc-sigs.sh) to test creation of PQC signature keys. Back then there was no support via the Cloud Console or `gcloud` for PQC algorithms in Cloud KMS. So that script still uses plain API calls but should be considered superseded.
+
+
