@@ -91,10 +91,11 @@ Testing selected APIs:
 
 ### 3. Using OpenSSL
 
-Test success depends on your version of openssl.
+Test success depends on your version of openssl. If you're running an older version use these [instructions to install openssl3.5+](https://github.com/christianepeters/howto/blob/master/openssl.md).
+
 
 E.g., on one of my machines I still have openssl version `LibreSSL 3.3.6` which results in a failure that `s_client` does not recognize the TLS1.3 group `X25519MLKEM768`. 
-However, on another machine where I have openssl version `OpenSSL 3.5.5` installed it works:
+Once you have openssl version `OpenSSL 3.5+` installed it works:
 
 ```
 openssl s_client -connect www.google.com:443 -servername www.google.com -groups X25519MLKEM768
