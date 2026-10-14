@@ -44,6 +44,7 @@ August 2026
 August 2026
 * [Future-proofing data integrity: Quantum-safe digital signatures in Cloud KMS](https://cloud.google.com/blog/products/identity-security/future-proofing-data-integrity-quantum-safe-digital-signatures-in-cloud-kms?e=48754805)
 July 2026
+* [Announcing quantum-safe key exchange for Application & Network Proxy Load Balancers](https://discuss.google.dev/t/announcing-quantum-safe-key-exchange-for-application-network-proxy-load-balancers/368669/1) June 2026
 * [Where to Go Next with Quantum-Safe Certificates](https://bughunters.google.com/blog/next-with-quantum-safe-certificates)
 June 2026
 * [Quantum frontiers may be closer than they appear](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/)
